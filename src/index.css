@@ -1,0 +1,117 @@
+
+@font-face {
+    font-family: "Satoshi" ;
+    src: url("../public//fonts/Satoshi-Regular.eot");
+    font-weight: 400;
+}
+#root {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  
+  body,
+  html {
+    font-family: "Outfit", sans-serif;
+    user-select: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  img {
+
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+hr
+{   
+    width: 100%;
+    border: 1px solid #EFEFEF;
+}
+
+.Banner
+{
+    margin: auto;
+    width: 100%;
+}
+
+.Main_Container
+{
+    margin: auto;
+    max-width: 910px;
+    width: 1120px;
+
+}
+
+.Section_Container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 36px 0;
+}
+
+.Section_Title
+{
+    display: block;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: lowercase;
+    
+    
+    color: #FF8100;
+}
+
+.Section_Heading
+{
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+
+    max-width: 65%;
+    color: #1D1D1F;
+}
+
+.Section_Content
+{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 600;
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+
+    color: #6B6F75;
+}
+
+.Banner_Container
+{
+    background-image: url("./Ilustrations/Banner.svg");
+    /* width: 1440px; */
+    max-height: 400px;
+    height: 400px;
+    background-size: cover;
+    margin: auto;
+}
