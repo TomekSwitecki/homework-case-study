@@ -11,6 +11,9 @@
   
   body,
   html {
+    counter-reset: my-counter;
+
+
     font-family: "Outfit", sans-serif;
     user-select: none;
     overflow: hidden;
@@ -47,6 +50,24 @@ hr
     border: 1px solid #EFEFEF;
 }
 
+ul > li
+{
+    padding-left: 10px;
+}
+::marker
+{
+    color: #888889;
+    font-size: 2em;
+    position: relative;
+    top: 10px;
+}
+
+.App
+{
+    /* background-image: url("../src/Ilustrations/grid.svg"); */
+}
+
+
 .Banner
 {
     margin: auto;
@@ -58,6 +79,8 @@ hr
     margin: auto;
     max-width: 910px;
     width: 1120px;
+
+
 
 }
 
@@ -130,6 +153,7 @@ hr
     height: 400px;
     background-size: cover;
     margin: auto;
+    
 }
 
 .PhotoSection_Container
@@ -153,20 +177,20 @@ hr
 }
 .PhotoSection_text_container
 {
+    position: relative;
     width: 75%;
+    background-image: url("../src/Ilustrations/grid.svg");
 }
-
-.PhotoSection_list
+.PhotoSection_text_container::before
 {
-    list-style-position: inside;
-    line-height: 1.5;
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    position: absolute;
+    top: -150px;
+    left: 240px;
+    
+    font-weight: 400;
+    font-size: 624px;
+    color: #1D1D1F;
+    opacity: 0.05;
 }
-.PhotoSection_list li {
-    display: list-item;
-    text-align: -webkit-match-parent; /* Safari */
-  }
-
-/* li::marker {
-    display: inline-block;
-    vertical-align: middle;
-  } */

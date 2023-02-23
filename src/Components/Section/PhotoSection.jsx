@@ -11,8 +11,19 @@ function PhotoSection(props) {
                       <ul className="PhotoSection_list">
                         <li>
                           <div>
-                          <div className="Section_Subheading">{props.Subheading}</div>
-                          <span className="Section_Paragaph">{props.Paragaph}</span>
+                          <div className="Section_Subheading">{props.Subheading_1}</div>
+                          <span className="Section_Paragaph">{props.Paragaph_1}</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <ul className="PhotoSection_list">
+                        <li>
+                          <div>
+                          <div className="Section_Subheading">{props.Subheading_2}</div>
+                          <span className="Section_Paragaph">{props.Paragaph_2}</span>
                           </div>
                         </li>
                       </ul>
