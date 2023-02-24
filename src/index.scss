@@ -1,0 +1,77 @@
+@use "./Components/PhotoSection/PhotoSection";
+@use "./Components/Section/Section";
+@use "./Components/Divider";
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi-Regular.woff2");
+    font-weight: 400;
+}
+
+#root {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+body,
+html {
+    counter-reset: my-counter;
+
+
+    font-family: "Outfit", sans-serif;
+    user-select: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    width: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+
+
+
+.App {
+    /* background-image: url("../src/Ilustrations/grid.svg"); */
+}
+
+.Main_Container {
+    margin: auto;
+    max-width: 910px;
+    width: 1120px;
+}
+
+.Banner {
+    background-image: url("./Ilustrations/BannerWhite.svg");
+    /* width: 1440px; */
+    max-height: 400px;
+    height: 400px;
+    background-size: cover;
+    margin: auto;
+}
+
