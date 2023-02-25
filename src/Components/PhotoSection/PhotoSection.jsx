@@ -1,5 +1,4 @@
 import React from "react";
-import Mockup from "../../Ilustrations/Mockup.png";
 import ListedParagraph from "../Section/ListedParagraph";
 
 function PhotoSection(props) {
@@ -18,7 +17,7 @@ function PhotoSection(props) {
         </div>
 
         <div className="PhotoSection_img_container">
-          <img src={Mockup}></img>
+          <img src={props.Mock}></img>
         </div>
       </div>
 

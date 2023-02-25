@@ -1,11 +1,16 @@
 @use "./Components/PhotoSection/PhotoSection";
 @use "./Components/Section/Section";
 @use "./Components/Divider";
-
+@use "./Components/RevealingSlider/RevealingSlider";
 @font-face {
     font-family: "Satoshi";
     src: url("./fonts/Satoshi-Regular.woff2");
     font-weight: 400;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("./fonts/Satoshi-Bold.woff2");
+    font-weight: 500;
 }
 
 #root {
@@ -58,11 +63,12 @@ ol {
 
 .App {
     /* background-image: url("../src/Ilustrations/grid.svg"); */
+    overflow-x: hidden;
 }
 
 .Main_Container {
     margin: auto;
-    max-width: 910px;
+    max-width: 1120px;
     width: 1120px;
 }
 
