@@ -1,0 +1,53 @@
+@import '../Text';
+@import "../Showcase";
+
+.IntroSection_Container {
+    margin: 64px 0;
+}
+
+.Logo {
+    width: 500px;
+    display: inline;
+}
+
+.LogoTags_Container {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-bottom: 2px solid #EFEFEF;
+}
+
+.Tags_Container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 16px 0;
+    align-items: center;
+}
+
+.Showcase_Tag_Container {
+    @include showcase_tag;
+}
+
+.Showcase_Tag_Container:hover {
+    @include showcase_tag__hover;
+
+    .Showcase_Tag_Text {
+        @include showcase_tag_text__hover;
+    }
+}
+
+.Tags_Legend {
+    @include paragraph_custom(16px);
+}
+
+.IntroSection_Paragraph {
+    @include paragraph;
+}
+
+
+
+.Showcase_Tag_Text {
+    @include showcase_tag_text;
+}

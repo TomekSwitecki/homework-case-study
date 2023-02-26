@@ -1,15 +1,14 @@
-@mixin showcase_theme() {
-  background: linear-gradient(99.12deg, #1A96FD 0%, #007EE7 98.67%);
-  box-shadow: 0px 46px 128px rgba(26, 150, 253, 0.07), 0px 23.0225px 64.0625px rgba(26, 150, 253, 0.0532233), 0px 13.8677px 38.5883px rgba(26, 150, 253, 0.0456112), 0px 8.88712px 24.7294px rgba(26, 150, 253, 0.0399626), 0px 5.75991px 16.0276px rgba(26, 150, 253, 0.035), 0px 3.6258px 10.0892px rgba(26, 150, 253, 0.0300374), 0px 2.08325px 5.79686px rgba(26, 150, 253, 0.0243888), 0px 0.916891px 2.55135px rgba(26, 150, 253, 0.0167767);
-  color: rgb(255, 255, 255);
-}
+@import "../Showcase";
+
 .RevealingSlider_Container{
     position: relative;
     margin: auto;
     width: 1120px;
     height: 796px;
-    margin-bottom: 128px;
+    margin-bottom: 64px;
+    margin-top: 128px;
     outline: 20px solid hsla(0, 0%, 91%, 0.205);
+
 
     @mixin slider_image() {
       position: absolute;
@@ -21,26 +20,18 @@
       background-image: url('');
       transition: opacity 0.2s;
     }
-    @mixin showcase_tags() {
-      font-family: "Satoshi", sans-serif;
-      font-size: 16px;
-      font-weight: 500;
-      opacity: 1;
-      position: relative;
-      padding: 18px 72px;
-      transition: opacity 0.5s;
-      @include showcase_theme;
-    }
+
 
     .background-img {
       @include slider_image;
       background-size:contain;
-      background-repeat:round;
+      background-repeat:no-repeat;
+      background-color: #f8f8f8;
       opacity: 1;
     }
     .background-img::before
     {
-      @include showcase_tags;
+      @include showcase_labels;
       content: "Before";
       z-index: 0;
       top: 15%;
@@ -51,12 +42,14 @@
       @include slider_image;
       background-size:cover;
       opacity: 1;
-      filter: drop-shadow(8px 0px 36px #bdbdbd);
+      box-shadow: 15px 0px 25px #00000045;
+      border-right: 4px solid  #87c9ff ;
+      transition: all 0.2s;
     }
 
     .foreground-img::before
     {
-      @include showcase_tags;
+      @include showcase_labels;
       content: "Redesigned";
       z-index: 1;
       top: 15%;
@@ -68,6 +61,16 @@
   .RevealingSlider_Container:hover{
     outline: 25px solid hsla(0, 0%, 91%, 0.9);
     transition: all 0.2s;
+
+    .foreground-img {
+      border-right: 6px solid  #4fb0ff ;
+      transition: border 0.2s;
+    }
+
+    .background-img {
+      filter: grayscale(1);
+      transition: all 0.2s;
+    }
   }
 
 
@@ -126,7 +129,7 @@
     height: $size;
     border-radius: 50%;
     left: calc(50% - 18px);
-    top: calc(50% - 18px);
+    top: calc(50% - 26px);
 
     &:after {
       @include arrow-helper();

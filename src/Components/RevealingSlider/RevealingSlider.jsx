@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 // import Teacher_After from "../../Ilustrations/TeacherOld.png"
-import Teacher_After from "../../Ilustrations/Teacher_HomePage.png"
-import Teacher_Before from "../../Ilustrations/test.png"
+// import Teacher_After from "../../Ilustrations/Teacher_HomePage.png"
+// import Teacher_Before from "../../Ilustrations/test.png"
 import $ from 'jquery';
 
 function RevealingSlider(props) {
-  const [sliderPos, setSliderPos] = useState(75);
+  const [sliderPos, setSliderPos] = useState(68);
   const sliderId = `slider-${props.id}`;
 
   useEffect(() => {
@@ -14,14 +14,14 @@ function RevealingSlider(props) {
         // Update the width of the foreground image
         $(`.foreground-img.${sliderId}`).css('width', `${sliderPos}%`)
         // Update the position of the slider button
-        $(`.slider-button.${sliderId}`).css('left', `calc(${sliderPos}% - 18px)`)
+        $(`.slider-button.${sliderId}`).css('left', `calc(${sliderPos}% - 26px)`)
       });
     $(`.foreground-img.${sliderId}`).css('width', `${sliderPos}%`);
   }, [sliderPos, sliderId]);
 
   useEffect(() => {
     // Update the position of the slider button when the component loads
-    $(`.slider-button.${sliderId}`).css('left', `calc(${sliderPos}% - 18px)`);
+    $(`.slider-button.${sliderId}`).css('left', `calc(${sliderPos}% - 26px)`);
   }, [sliderPos, sliderId]);
   
   const handleSliderChange = (e) => {
@@ -29,10 +29,10 @@ function RevealingSlider(props) {
   };
   
   const Before = {
-    backgroundImage: `url(${Teacher_Before})`,
+    backgroundImage: `url(${props.Background})`,
   };
   const After = {
-    backgroundImage: `url(${Teacher_After})`,
+    backgroundImage: `url(${props.Foreground})`,
   };
 
   
@@ -44,7 +44,7 @@ function RevealingSlider(props) {
       <input
         type='range'
         min='0'
-        max='99.8'
+        max='100'
         value={sliderPos}
         className='slider'
         name='slider'

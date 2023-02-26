@@ -2,6 +2,10 @@
 @use "./Components/Section/Section";
 @use "./Components/Divider";
 @use "./Components/RevealingSlider/RevealingSlider";
+@use "./Components/IntroSection/IntroSection";
+@use "./Components/Text";
+@use "./Components/Showcase";
+
 @font-face {
     font-family: "Satoshi";
     src: url("./fonts/Satoshi-Regular.woff2");
@@ -57,6 +61,24 @@ ol {
     list-style: none;
 }
 
+em
+{
+    background: linear-gradient(93.64deg, #1A96FD 0%, #007EE7 100%);
+    color: white;
+    text-transform: none;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    padding: 4px 4px;
+    transition: all 0.2s;
+}
+
+em:hover
+{
+    letter-spacing: -0.05px;
+    transition: all 0.2s;
+}
+
 
 
 
@@ -73,7 +95,7 @@ ol {
 }
 
 .Banner {
-    background-image: url("./Ilustrations/BannerWhite.svg");
+    background-image: url("./Ilustrations/Banner_White.svg");
     /* width: 1440px; */
     max-height: 400px;
     height: 400px;

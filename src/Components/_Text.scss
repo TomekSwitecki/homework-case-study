@@ -1,0 +1,68 @@
+@mixin paragraph_custom($size) {
+    white-space: break-spaces;
+
+    font-family: "Satoshi", sans-serif;
+    display: block;
+    font-weight: 400;
+    font-size: $size;
+    line-height: 200%;
+
+    color: #6B6F75;
+}
+
+@mixin paragraph($size:18px) {
+    white-space: break-spaces;
+
+    font-family: "Satoshi", sans-serif;
+    display: block;
+    font-weight: 400;
+    font-size: $size;
+    line-height: 200%;
+
+    color: #6B6F75;
+}
+
+@mixin section_title {
+    font-family: "Satoshi", sans-serif;
+    display: block;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: lowercase;
+
+
+    color: #FF8100;
+}
+
+@mixin section_heading {
+    font-family: "Satoshi", sans-serif;
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+
+    max-width: 65%;
+    color: #1D1D1F;
+
+    white-space: break-spaces;
+}
+
+@mixin section_heading_custom($size) {
+    font-family: "Satoshi", sans-serif;
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-weight: 600;
+    font-size: $size;
+    line-height: 40px;
+
+    max-width: 65%;
+    color: #1D1D1F;
+
+    white-space: break-spaces;
+}

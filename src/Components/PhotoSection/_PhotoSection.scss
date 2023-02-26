@@ -1,18 +1,8 @@
+@import '../Text';
 .PhotoSection_list_item {
     .Section_Heading {
 
-        display: block;
-
-        margin-bottom: 12px;
-
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 40px;
-
-        max-width: 65%;
-        color: #1D1D1F;
-
-
+        @include section_heading_custom(24px);
         &.Section_Heading:before {
             left: 0;
             content: "• ";
@@ -23,6 +13,8 @@
     }
 }
 
+
+
 @mixin PhotoSection_Container {
     max-width: 1440px;
     width: 1140px;
@@ -30,8 +22,9 @@
     
     grid-gap: inherit;
     height: max-content;
-    margin: 128px auto;
+    margin: 64px auto;
   }
+  
 
 .PhotoSection_Container {
 
@@ -70,3 +63,4 @@
     color: #1D1D1F;
     opacity: 0.05;
 }
+
