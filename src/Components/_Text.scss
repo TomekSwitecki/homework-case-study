@@ -35,6 +35,19 @@
     color: #FF8100;
 }
 
+@mixin section_title_custom($color) {
+    font-family: "Satoshi", sans-serif;
+    display: block;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: lowercase;
+
+
+    color: $color;
+}
+
 @mixin section_heading {
     font-family: "Satoshi", sans-serif;
     display: block;
@@ -42,10 +55,9 @@
     margin-bottom: 12px;
 
     font-weight: 600;
-    font-size: 32px;
+    font-size: 36px;
     line-height: 40px;
 
-    max-width: 65%;
     color: #1D1D1F;
 
     white-space: break-spaces;

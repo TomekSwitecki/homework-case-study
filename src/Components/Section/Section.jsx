@@ -4,7 +4,7 @@ import Divider from "../Divider";
 
 function Section(props) {
     return (
-      <div className="Section_Container">
+      <div className={"Section_Container"}>
         {!props.NoTopDivider ? <Divider></Divider> : null}
         <div>
         <span className="Section_Title">{props.Title}</span>

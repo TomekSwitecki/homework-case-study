@@ -25,7 +25,7 @@
   grid-gap: inherit;
   height: -moz-max-content;
   height: max-content;
-  margin: 64px auto;
+  margin: 0 auto 128px auto;
   flex-direction: row;
 }
 .PhotoSection_Container .Section_Heading {
@@ -39,7 +39,7 @@
   grid-gap: inherit;
   height: -moz-max-content;
   height: max-content;
-  margin: 64px auto;
+  margin: 0 auto 128px auto;
   flex-direction: row-reverse;
 }
 
@@ -85,9 +85,8 @@
   display: block;
   margin-bottom: 12px;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 40px;
-  max-width: 65%;
   color: #1D1D1F;
   white-space: break-spaces;
 }
@@ -100,6 +99,33 @@
   font-size: 18px;
   line-height: 200%;
   color: #6B6F75;
+}
+
+.Header_Container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 72px 0 36px 0;
+}
+.Header_Container .Section_Heading {
+  font-family: "Satoshi", sans-serif;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 40px;
+  max-width: 65%;
+  color: #1D1D1F;
+  white-space: break-spaces;
+}
+.Header_Container .Section_Title {
+  font-family: "Satoshi", sans-serif;
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: lowercase;
+  color: #807CBF;
 }
 
 .Divider {

@@ -1,0 +1,20 @@
+@import '../Text';
+.Header_Container
+{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    
+        margin: 72px 0  36px 0 ;
+       
+        .Section_Heading
+        {
+            @include section_heading_custom(64px);
+        }
+        .Section_Title
+        {
+            @include section_title_custom(#807CBF);
+        }
+
+
+}
