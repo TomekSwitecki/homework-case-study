@@ -7,7 +7,7 @@ import Section from "./Components/Section/Section";
 import Header from './Components/Section/Header';
 import RevealingSlider from './Components/RevealingSlider/RevealingSlider';
 import IntroSection from './Components/IntroSection/IntroSection';
-
+import Frame from './Components/Frame/Frame';
 
 import Landing_Page from "./Ilustrations/LandingPage.png";
 import Landing_Page_Old from "./Ilustrations/LandingPage_Old.png";
@@ -27,6 +27,10 @@ import Mockup_Teacher from "./Ilustrations/Mock_Teacher.png";
 import Mockup_Student from "./Ilustrations/Mock_Student.png";
 
 
+import Interactions1 from "./Ilustrations/Interactions_1.gif";
+import Interactions2 from "./Ilustrations/Interactions_2.gif";
+import Placeholders from "./Ilustrations/Placeholder_Example.png";
+import Divider from './Components/Divider';
 
 function App() {
   return (
@@ -46,6 +50,13 @@ function App() {
     <Section NoBottomDivider Title={Content.title3} Heading={Content.heading3} Paragraph={Content.paragraph3}></Section>
     <RevealingSlider Foreground={HomePage_Student} Background={HomePage_Student_Old} id="3"></RevealingSlider>
     <RevealingSlider Foreground={HomePage_Teacher} Background={HomePage_Teacher_Old} id="4"></RevealingSlider>
+    <Section NoBottomDivider Title={Content.title5} Heading={Content.heading5} Paragraph={Content.paragraph5}></Section>
+    <Frame Content={Interactions1}></Frame>
+    <Divider Big></Divider>
+    <Frame Content={Interactions2}></Frame>
+    <Section NoBottomDivider NoTopDivider Paragraph={Content.paragraph6}></Section>
+    <Frame Content={Placeholders}></Frame>
+    <Section NoBottomDivider Title={"result"} Heading={Content.heading5} Paragraph={Content.paragraph5}></Section>
    </div>
     </div>
   );

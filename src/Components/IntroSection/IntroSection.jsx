@@ -7,7 +7,6 @@ function IntroSection(props) {
             <div className="LogoTags_Container">
                 <img className={"Logo"} src={props.Logo}></img>
                 <div className="Tags_Container">
-                <span className="Tags_Legend">Areas of focus:</span>
                 {props.Tags.map((Tag) => (
                     
                     <div className="Showcase_Tag_Container">

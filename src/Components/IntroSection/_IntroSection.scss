@@ -13,9 +13,8 @@
 .LogoTags_Container {
     margin-bottom: 32px;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    border-bottom: 2px solid #EFEFEF;
+    flex-direction: column-reverse;
+    gap: 18px;
 }
 
 .Tags_Container {

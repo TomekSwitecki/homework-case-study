@@ -6,6 +6,7 @@
 @use "./Components/IntroSection/IntroSection";
 @use "./Components/Text";
 @use "./Components/Showcase";
+@use "./Components/Frame/Frame";
 
 @font-face {
     font-family: "Satoshi";
@@ -102,5 +103,6 @@ em:hover
     height: 400px;
     background-size: cover;
     margin: auto;
+    border-bottom: 12px solid #EFEFEF;
 }
 

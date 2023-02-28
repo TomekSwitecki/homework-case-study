@@ -133,6 +133,12 @@
   border: 1px solid #EFEFEF;
 }
 
+.Divider__Big {
+  width: 100%;
+  border: 1px solid #EFEFEF;
+  margin: 70px 0px;
+}
+
 .RevealingSlider_Container {
   position: relative;
   margin: auto;
@@ -300,9 +306,8 @@
 .LogoTags_Container {
   margin-bottom: 32px;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  border-bottom: 2px solid #EFEFEF;
+  flex-direction: column-reverse;
+  gap: 18px;
 }
 
 .Tags_Container {
@@ -366,6 +371,22 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.Frame_Container {
+  position: relative;
+  margin: auto;
+  width: 1120px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  background-color: hsla(0, 0%, 91%, 0.205);
+  outline: 20px solid hsla(0, 0%, 91%, 0.205);
+}
+.Frame_Container img {
+  width: 100%;
+  height: auto;
 }
 
 @font-face {
@@ -454,4 +475,5 @@ em:hover {
   height: 400px;
   background-size: cover;
   margin: auto;
+  border-bottom: 12px solid #EFEFEF;
 }/*# sourceMappingURL=index.css.map */

@@ -15,6 +15,10 @@ export const heading3 = "Rebuilding users' trust"
 export const paragraph3 = `Do Not Underestimate the Importance of Website Design
 Last but certainly not least, establishing trust with your consumers takes designing a robust website. The appearance and usability of a site can make or break the user experience. A website that appears outdated takes too long to load does not have enough white space, or commits another web design faux pas is a red flag for the modern user. One study even found that 44 percent of site visitors will bounce if the company does not include its phone number or other contact information.`
 
+export const title5 = "guiding user"
+export const heading5 = "Microinteractions & Contextual Help"
+export const paragraph5 = `Microinteractions play a crucial role in communicating system feedback to the user. Spinning loading icons are the most common system microinteractions. These microinteractions let the user know to wait while the app or website is loading.`
+export const paragraph6 = `Microinteractions play a crucial role in communicating system feedback to the user. Spinning loading icons are the most common system microinteractions. These microinteractions let the user know to wait while the app or website is loading.`
 
 export const SoloTitle1  = "design process";
 export const SoloHeading1  = "Design Principles";
@@ -35,7 +39,7 @@ export const PhotoSection_2_Paragraph_1 = "The ability to view purchase history 
 export const PhotoSection_2_Heading_2= "Guest shopping";
 export const PhotoSection_2_Paragraph_2= "Sometimes you just want to stay anonymous. With Furnitura shopping as guest is also an option.";
 
-export const Tags=["UI Redesign","UX Redesign","Timespan - 2 Weeks","Art Direction Change","Microinteractions"];
+export const Tags=["UI Redesign","UX Redesign","Art Direction Change","Microinteractions","Timespan - 2 Weeks"];
 export const IntroSection_Paragraph=`Homework.com is an application that <em>aims to make remote education as frictionless as possible</em> for both students and teachers. Classes and tasks can created with ease by faculty member. Students can submit their task’s solutions, and teachers can download them. 
 Everything within one <em>user-friendly application</em>, eliminating the burdensome process of gathering submissions through email. 
 

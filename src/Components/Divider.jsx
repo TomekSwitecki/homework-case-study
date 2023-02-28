@@ -3,7 +3,7 @@ import React from "react";
 
 function Divider(props) {
     return (
-        <hr className="Divider"></hr>
+        <hr className={props.Big ? "Divider__Big" : "Divider"}></hr>
     );
   }
 
