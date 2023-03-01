@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ListedParagraph from "../Section/ListedParagraph";
+import {fadeInImages} from  "../../Anim";
 
 function PhotoSection(props) {
+
+  useEffect(() => {
+    fadeInImages(); // call the fadeInImages function on component mount
+  }, []);
   return (
 
       <div className={props.Reversed ? "PhotoSection_Container" : "PhotoSection_Container__Reversed"}>
@@ -17,7 +22,7 @@ function PhotoSection(props) {
         </div>
 
         <div className="PhotoSection_img_container">
-          <img src={props.Mock}></img>
+          <img className={props.Reversed ? "hidden_right" : "hidden_left"} src={props.Mock}></img>
         </div>
       </div>
 

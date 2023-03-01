@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-// import Teacher_After from "../../Ilustrations/TeacherOld.png"
-// import Teacher_After from "../../Ilustrations/Teacher_HomePage.png"
-// import Teacher_Before from "../../Ilustrations/test.png"
+import {fadeInImages} from  "../../Anim";
 import $ from 'jquery';
 
 function RevealingSlider(props) {
-  const [sliderPos, setSliderPos] = useState(68);
+  useEffect(() => {
+    fadeInImages(); // call the fadeInImages function on component mount
+  }, []);
+  const [sliderPos, setSliderPos] = useState(Math.floor(Math.random() * 26) + 45);
   const sliderId = `slider-${props.id}`;
 
   useEffect(() => {
@@ -38,7 +39,7 @@ function RevealingSlider(props) {
   
 
   return (
-    <div className='RevealingSlider_Container'>
+    <div className='RevealingSlider_Container hidden_opacity'>
       <div style={Before} className={`img background-img ${sliderId}`}></div>
       <div style={After} className={`img foreground-img ${sliderId}`}></div>
       <input

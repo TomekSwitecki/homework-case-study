@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React, { Component, useEffect } from "react";
 import * as Content from './Content';
 
 import Logo from "./Ilustrations/logo_black.svg";
@@ -32,10 +32,15 @@ import Interactions2 from "./Ilustrations/Interactions_2.gif";
 import Placeholders from "./Ilustrations/Placeholder_Example.png";
 import Divider from './Components/Divider';
 
+
+import {fadeInImages} from  "./Anim";
 function App() {
+  useEffect(() => {
+    fadeInImages(); // call the fadeInImages function on component mount
+  }, []);
   return (
     <div className="App">
-      <div className="Banner"></div>
+      <div className="Banner hidden_left"></div>
     <div className="Main_Container">
     <IntroSection Tags={Content.Tags} Logo={Logo} Paragraph={Content.IntroSection_Paragraph}></IntroSection>
     <Section NoBottomDivider Title={Content.title1} Heading={Content.heading1} Paragraph={Content.paragraph1}></Section>
@@ -51,11 +56,11 @@ function App() {
     <RevealingSlider Foreground={HomePage_Student} Background={HomePage_Student_Old} id="3"></RevealingSlider>
     <RevealingSlider Foreground={HomePage_Teacher} Background={HomePage_Teacher_Old} id="4"></RevealingSlider>
     <Section NoBottomDivider Title={Content.title5} Heading={Content.heading5} Paragraph={Content.paragraph5}></Section>
-    <Frame Content={Interactions1}></Frame>
+    <Frame SlideIn="_left" Content={Interactions1}></Frame>
     <Divider Big></Divider>
-    <Frame Content={Interactions2}></Frame>
+    <Frame SlideIn="_right" Content={Interactions2}></Frame>
     <Section NoBottomDivider NoTopDivider Paragraph={Content.paragraph6}></Section>
-    <Frame Content={Placeholders}></Frame>
+    <Frame SlideIn="_left" Content={Placeholders}></Frame>
     <Section NoBottomDivider Title={"result"} Heading={Content.heading5} Paragraph={Content.paragraph5}></Section>
    </div>
     </div>
