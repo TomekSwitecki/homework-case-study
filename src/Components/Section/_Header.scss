@@ -9,11 +9,11 @@
        
         .Section_Heading
         {
-            @include section_heading_custom(64px);
+            @include section_heading(64px);
         }
         .Section_Title
         {
-            @include section_title_custom(#807CBF);
+            @include section_title(20px,#807CBF);
         }
 
 

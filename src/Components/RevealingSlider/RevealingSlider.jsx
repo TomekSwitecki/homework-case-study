@@ -15,14 +15,14 @@ function RevealingSlider(props) {
         // Update the width of the foreground image
         $(`.foreground-img.${sliderId}`).css('width', `${sliderPos}%`)
         // Update the position of the slider button
-        $(`.slider-button.${sliderId}`).css('left', `calc(${sliderPos}% - 26px)`)
+        $(`.slider-button.${sliderId}`).css('left', `calc(${sliderPos}% - 22px)`)
       });
     $(`.foreground-img.${sliderId}`).css('width', `${sliderPos}%`);
   }, [sliderPos, sliderId]);
 
   useEffect(() => {
     // Update the position of the slider button when the component loads
-    $(`.slider-button.${sliderId}`).css('left', `calc(${sliderPos}% - 26px)`);
+    $(`.slider-button.${sliderId}`).css('left', `calc(${sliderPos}% - 22px)`);
   }, [sliderPos, sliderId]);
   
   const handleSliderChange = (e) => {

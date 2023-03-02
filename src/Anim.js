@@ -1,5 +1,5 @@
 export function fadeInImages() {
-    const hiddenElements = document.querySelectorAll(".hidden_left, .hidden_up, .hidden_right, .hidden_opacity");
+    const hiddenElements = document.querySelectorAll(".hidden_left, .hidden_up, .hidden_right, .hidden_opacity, .hidden_down");
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {

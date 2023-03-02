@@ -8,9 +8,9 @@ function IntroSection(props) {
     return (
 
         <div className="IntroSection_Container">
-            <div className="LogoTags_Container">
-                <img className={"Logo hidden_right"} src={props.Logo}></img>
-                <div className="Tags_Container">
+            <div className="LogoTags_Container ">
+                <img className={"Logo hidden_left"} src={props.Logo}></img>
+                {/* <div className="Tags_Container hidden_left">
                 {props.Tags.map((Tag) => (
                     
                     <div className="Showcase_Tag_Container">
@@ -18,10 +18,10 @@ function IntroSection(props) {
                     </div>
 
                 ))}
-                </div>
+                </div> */}
             </div>
             <span
-        className="IntroSection_Paragraph"
+        className="IntroSection_Paragraph hidden_right"
         dangerouslySetInnerHTML={{ __html: props.Paragraph }}
       />
         </div>

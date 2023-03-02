@@ -6,9 +6,7 @@ export const paragraph1 = "A complete lack of microinteractions and contextual h
 export const title2 = "goal & solution";
 export const heading2 = `Give user as much feedback as possible & 
 shift product identity.`;
-export const paragraph2 = `The solution to improve the overall experience and to get rid off mentioned-above friction points, was much more complex than solely adding more user-interface feedback points. 
-
-The application's infantile art direction, combined with a very raw and flawed UX, gave the impression of an app in its early alpha stage rather than a finished and mature service. The product identity adjustment was a much needed change in order to make the application feel like a finished and carefully thought-out product.`;
+export const paragraph2 = `Another thing that contributed to poor UX was application UI design that only emphasized the impression of using an app in its early alpha ) stage rather than a finished and mature service (Aesthetic-Usability Effect). The product identity change was a much needed impovement in order to make the application feel like a finished and carefully thought-out product.`;
 
 export const title3 = "UI Redesigned"
 export const heading3 = "Rebuilding users' trust"

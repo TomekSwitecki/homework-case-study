@@ -2,7 +2,7 @@
 .PhotoSection_list_item {
     .Section_Heading {
 
-        @include section_heading_custom(24px);
+        @include section_heading(24px);
         &.Section_Heading:before {
             left: 0;
             content: "• ";

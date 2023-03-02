@@ -1,0 +1,48 @@
+
+@import '../Text';
+
+.Footer_Container
+{    
+    background: #1F1F1F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 128px;
+    gap: 12px;
+    margin-top: 128px;
+
+
+    .Divider
+    {
+        border: 1px solid rgba(232, 232, 232, 0.21);;
+    }
+}
+.Heading_Wrapper
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    text-align: left;
+}
+
+.Signature_Wrapper
+{
+    width: 100%;
+    text-align: right;
+}
+.Footer_Heading
+{
+    @include section_heading(40px, #FFFFFF);
+}
+.Footer_Label
+{
+    @include paragraph(18px,#BFBFBF);
+}
+
+.Footer_Signature
+{
+    @include paragraph(15px,#BFBFBF);
+}
+

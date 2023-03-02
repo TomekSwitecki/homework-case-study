@@ -6,7 +6,6 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 40px;
-  max-width: 65%;
   color: #1D1D1F;
   white-space: break-spaces;
 }
@@ -74,7 +73,7 @@
   font-family: "Satoshi", sans-serif;
   display: block;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 23px;
   text-transform: lowercase;
   color: #FF8100;
@@ -114,7 +113,6 @@
   font-weight: 600;
   font-size: 64px;
   line-height: 40px;
-  max-width: 65%;
   color: #1D1D1F;
   white-space: break-spaces;
 }
@@ -122,7 +120,7 @@
   font-family: "Satoshi", sans-serif;
   display: block;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 23px;
   text-transform: lowercase;
   color: #807CBF;
@@ -196,7 +194,7 @@
   background-size: cover;
   opacity: 1;
   box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.2705882353);
-  border-right: 4px solid #87c9ff;
+  border-right: 4px solid #a1a1a1;
   transition: all 0.2s;
 }
 .RevealingSlider_Container .foreground-img::before {
@@ -226,12 +224,16 @@
   transition: all 0.2s;
 }
 .RevealingSlider_Container:hover .foreground-img {
-  border-right: 6px solid #4fb0ff;
+  border-right: 4px solid #4fb0ff;
   transition: border 0.2s;
 }
 .RevealingSlider_Container:hover .background-img {
   filter: grayscale(1);
   transition: all 0.2s;
+}
+.RevealingSlider_Container:hover .slider-button {
+  filter: saturate(100%);
+  transition: filter 0.2s;
 }
 
 .slider {
@@ -269,20 +271,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: saturate(0);
+  border: 4px solid #4fb0ff;
   pointer-events: none;
   position: absolute;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   left: calc(50% - 18px);
   top: calc(50% - 26px);
+  transition: filter 0.2s;
 }
 .slider-button:after {
   content: "";
   padding: 3px;
   display: inline-block;
   border: solid #ffffff;
-  border-width: 0 2px 2px 0;
+  border-width: 0 3px 3px 0;
   transform: rotate(-45deg);
 }
 .slider-button:before {
@@ -290,7 +295,7 @@
   padding: 3px;
   display: inline-block;
   border: solid #ffffff;
-  border-width: 0 2px 2px 0;
+  border-width: 0 3px 3px 0;
   transform: rotate(135deg);
 }
 
@@ -387,6 +392,64 @@
   height: auto;
 }
 
+.Footer_Container {
+  background: #1F1F1F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 128px;
+  gap: 12px;
+  margin-top: 128px;
+}
+.Footer_Container .Divider {
+  border: 1px solid rgba(232, 232, 232, 0.21);
+}
+
+.Heading_Wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  text-align: left;
+}
+
+.Signature_Wrapper {
+  width: 100%;
+  text-align: right;
+}
+
+.Footer_Heading {
+  font-family: "Satoshi", sans-serif;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  white-space: break-spaces;
+}
+
+.Footer_Label {
+  white-space: break-spaces;
+  font-family: "Satoshi", sans-serif;
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  color: #BFBFBF;
+}
+
+.Footer_Signature {
+  white-space: break-spaces;
+  font-family: "Satoshi", sans-serif;
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 200%;
+  color: #BFBFBF;
+}
+
 @font-face {
   font-family: "Satoshi";
   src: url("./fonts/Satoshi-Regular.woff2");
@@ -448,6 +511,7 @@ em {
   font-style: normal;
   padding: 4px 4px;
   transition: all 0.2s;
+  margin: 5px;
 }
 
 em:hover {
@@ -456,8 +520,10 @@ em:hover {
 }
 
 .App {
+  background-image: url("../src/Ilustrations/noise.png");
   overflow-x: hidden;
-  margin-bottom: 256px;
+  margin-bottom: 64px;
+  overflow-y: clip;
 }
 
 .Main_Container {
@@ -473,33 +539,38 @@ em:hover {
   height: 400px;
   background-size: cover;
   margin: auto;
-  border-bottom: 12px solid #EFEFEF;
 }
 
 .hidden_left {
   opacity: 0;
-  transform: translateX(-100px);
+  transform: translateX(-500px);
   filter: blur(5px);
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s ease-in-out, filter 0.15s ease;
 }
 
 .hidden_opacity {
   opacity: 0;
-  filter: blur(5px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  filter: blur(5px), saturate(0%);
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s ease-in-out, filter 0.15s ease;
 }
 
 .hidden_up {
   opacity: 0;
-  transform: translateY(-100px);
+  transform: translateY(-200px);
+  filter: blur(5px);
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s ease-in-out, filter 0.15s ease;
+}
+
+.hidden_down {
+  opacity: 0;
+  transform: translateY(200px);
   filter: blur(5px);
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s ease-in-out, filter 0.15s ease;
 }
 
 .hidden_right {
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateX(500px);
   filter: blur(5px);
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s ease-in-out, filter 0.15s ease;
 }
