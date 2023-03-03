@@ -3,7 +3,16 @@
 
 .IntroSection_Container {
     margin: 64px 0;
+    padding: 32px 128px;
+    background:#1F1F1F;
+    .Divider
+    {
+        border: 1px solid rgba(232, 232, 232, 0.20);;
+    }
+
 }
+
+
 
 .Logo {
     width: 500px;
@@ -42,7 +51,8 @@
 }
 
 .IntroSection_Paragraph {
-    @include paragraph;
+    margin: 32px 0;
+    @include paragraph(18px,#BFBFBF);
 }
 
 

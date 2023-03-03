@@ -7,7 +7,7 @@ function IntroSection(props) {
       }, []);
     return (
 
-        <div className="IntroSection_Container">
+        <div className="IntroSection_Container hidden_up">
             <div className="LogoTags_Container ">
                 <img className={"Logo hidden_left"} src={props.Logo}></img>
                 {/* <div className="Tags_Container hidden_left">
@@ -20,6 +20,7 @@ function IntroSection(props) {
                 ))}
                 </div> */}
             </div>
+            <Divider></Divider>
             <span
         className="IntroSection_Paragraph hidden_right"
         dangerouslySetInnerHTML={{ __html: props.Paragraph }}

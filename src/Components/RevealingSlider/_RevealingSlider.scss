@@ -5,10 +5,10 @@
     margin: auto;
     width: 1120px;
     height: 796px;
-    margin-bottom: 64px;
-    margin-top: 128px;
+    // margin-bottom: 64px;
+    // margin-top: 128px;
     outline: 20px solid hsla(0, 0%, 91%, 0.205);
-
+    transition: all 0.2s;
 
     @mixin slider_image() {
       position: absolute;

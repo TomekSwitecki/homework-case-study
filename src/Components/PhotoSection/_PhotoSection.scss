@@ -1,11 +1,12 @@
 @import '../Text';
 .PhotoSection_list_item {
     .Section_Heading {
-
+        position: relative;
         @include section_heading(24px);
         &.Section_Heading:before {
-            left: 0;
-            content: "• ";
+            left: -36px;
+            top: -6px;
+            content: "\2022   ";
             color: #888889;
             font-size: 50px;
             position: absolute;
@@ -19,7 +20,7 @@
     max-width: 1440px;
     width: 1140px;
     display: flex;
-    
+
     grid-gap: inherit;
     height: max-content;
     margin: 0 auto 128px auto;

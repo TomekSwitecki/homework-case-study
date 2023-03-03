@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .PhotoSection_list_item .Section_Heading {
+  position: relative;
   font-family: "Satoshi", sans-serif;
   display: block;
   margin-bottom: 12px;
@@ -10,8 +11,9 @@
   white-space: break-spaces;
 }
 .PhotoSection_list_item .Section_Heading.Section_Heading:before {
-  left: 0;
-  content: "• ";
+  left: -36px;
+  top: -6px;
+  content: "•  ";
   color: #888889;
   font-size: 50px;
   position: absolute;
@@ -72,6 +74,7 @@
 .Section_Title {
   font-family: "Satoshi", sans-serif;
   display: block;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
@@ -119,6 +122,7 @@
 .Header_Container .Section_Title {
   font-family: "Satoshi", sans-serif;
   display: block;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
@@ -134,7 +138,7 @@
 .Divider__Big {
   width: 100%;
   border: 1px solid #EFEFEF;
-  margin: 70px 0px;
+  margin: 128px 0px;
 }
 
 .RevealingSlider_Container {
@@ -142,9 +146,8 @@
   margin: auto;
   width: 1120px;
   height: 796px;
-  margin-bottom: 64px;
-  margin-top: 128px;
   outline: 20px solid hsla(0, 0%, 91%, 0.205);
+  transition: all 0.2s;
   transition: all 0.2s;
 }
 .RevealingSlider_Container .background-img {
@@ -301,6 +304,11 @@
 
 .IntroSection_Container {
   margin: 64px 0;
+  padding: 32px 128px;
+  background: #1F1F1F;
+}
+.IntroSection_Container .Divider {
+  border: 1px solid rgba(232, 232, 232, 0.2);
 }
 
 .Logo {
@@ -354,13 +362,14 @@
 }
 
 .IntroSection_Paragraph {
+  margin: 32px 0;
   white-space: break-spaces;
   font-family: "Satoshi", sans-serif;
   display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 200%;
-  color: #6B6F75;
+  color: #BFBFBF;
 }
 
 .Showcase_Tag_Text {
@@ -391,6 +400,18 @@
   width: 100%;
   height: auto;
 }
+.Frame_Container .Frame_label {
+  position: absolute;
+  z-index: 1;
+  top: -70px;
+  left: -19px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Satoshi";
+  background: #f8f8f8;
+  padding: 12px 32px;
+  box-shadow: 13px 0px 0px rgba(0, 0, 0, 0.25);
+}
 
 .Footer_Container {
   background: #1F1F1F;
@@ -402,7 +423,7 @@
   margin-top: 128px;
 }
 .Footer_Container .Divider {
-  border: 1px solid rgba(232, 232, 232, 0.21);
+  border: 1px solid rgba(232, 232, 232, 0.2);
 }
 
 .Heading_Wrapper {
@@ -511,7 +532,6 @@ em {
   font-style: normal;
   padding: 4px 4px;
   transition: all 0.2s;
-  margin: 5px;
 }
 
 em:hover {
@@ -541,6 +561,12 @@ em:hover {
   margin: auto;
 }
 
+.Sliders_Container {
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+}
+
 .hidden_left {
   opacity: 0;
   transform: translateX(-500px);
@@ -556,14 +582,14 @@ em:hover {
 
 .hidden_up {
   opacity: 0;
-  transform: translateY(-200px);
+  transform: translateY(-100px);
   filter: blur(5px);
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s ease-in-out, filter 0.15s ease;
 }
 
 .hidden_down {
   opacity: 0;
-  transform: translateY(200px);
+  transform: translateY(100px);
   filter: blur(5px);
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s ease-in-out, filter 0.15s ease;
 }

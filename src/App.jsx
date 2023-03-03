@@ -1,7 +1,7 @@
 import React, { Component, useEffect } from "react";
 import * as Content from './Content';
 
-import Logo from "./Ilustrations/logo_black.svg";
+import Logo from "./Ilustrations/logo_white.svg";
 import Photo_Section from "./Components/PhotoSection/PhotoSection";
 import Section from "./Components/Section/Section";
 import Header from './Components/Section/Header';
@@ -46,24 +46,23 @@ function App() {
     <IntroSection Tags={Content.Tags} Logo={Logo} Paragraph={Content.IntroSection_Paragraph}></IntroSection>
     <Section NoBottomDivider Title={Content.title1} Heading={Content.heading1} Paragraph={Content.paragraph1}></Section>
     <Section NoBottomDivider Title={Content.title2} Heading={Content.heading2} Paragraph={Content.paragraph2}></Section>
-    {/* <Section NoBottomDivider Title={Content.title3} Heading={Content.heading3} ></Section> */}
-    {/* <Header Title={Content.SoloTitle1} Heading={Content.SoloHeading1}></Header> */}
     <Photo_Section Mock={Mockup_Teacher} Section_Heading={Content.PhotoSection_1_Section_Heading} Heading_1={Content.PhotoSection_1_Heading_1} Paragraph_1={Content.PhotoSection_1_Paragraph_1} Heading_2={Content.PhotoSection_1_Heading_2} Paragraph_2={Content.PhotoSection_1_Paragraph_2}></Photo_Section>
-    <Photo_Section Mock={Mockup_Student} Reversed Section_Heading={Content.PhotoSection_2_Section_Heading} Heading_1={Content.PhotoSection_2_Heading_1} Paragraph_1={Content.PhotoSection_2_Paragraph_1} Heading_2={Content.PhotoSection_2_Heading_2} Paragraph_2={Content.PhotoSection_2_Paragraph_2}></Photo_Section>
-    <Section NoBottomDivider Title={Content.title3} Heading={Content.heading3} Paragraph={Content.paragraph3}></Section>
+    <div className="Sliders_Container">
     <RevealingSlider Foreground={Landing_Page} Background={Landing_Page_Old}  id="1"></RevealingSlider>
     <RevealingSlider Foreground={Registration_Page} Background={Registration_Page_Old} id="2"></RevealingSlider>
-    <Section NoBottomDivider Title={Content.title3} Heading={Content.heading3} Paragraph={Content.paragraph3}></Section>
-    <RevealingSlider Foreground={HomePage_Student} Background={HomePage_Student_Old} id="3"></RevealingSlider>
+    {/* <RevealingSlider Foreground={HomePage_Student} Background={HomePage_Student_Old} id="3"></RevealingSlider> */}
     <RevealingSlider Foreground={HomePage_Teacher} Background={HomePage_Teacher_Old} id="4"></RevealingSlider>
-    <Section NoBottomDivider Title={Content.title5} Heading={Content.heading5} Paragraph={Content.paragraph5}></Section>
-    <Frame SlideIn="_left" Content={Interactions1}></Frame>
+    </div>
     <Divider Big></Divider>
-    <Frame SlideIn="_right" Content={Interactions2}></Frame>
-    <Section NoBottomDivider NoTopDivider Paragraph={Content.paragraph6}></Section>
-    <Frame SlideIn="_left" Content={Placeholders}></Frame>
-    <Section NoBottomDivider Title={"result"} Heading={Content.heading5} Paragraph={Content.paragraph5}></Section>
-    <Frame SlideIn="_up" Content={Placeholders}></Frame>
+    <Photo_Section Mock={Mockup_Student} Reversed Section_Heading={Content.PhotoSection_2_Section_Heading} Heading_1={Content.PhotoSection_2_Heading_1} Paragraph_1={Content.PhotoSection_2_Paragraph_1} Heading_2={Content.PhotoSection_2_Heading_2} Paragraph_2={Content.PhotoSection_2_Paragraph_2}></Photo_Section>
+    {/* <Section NoBottomDivider Title={Content.title3} Heading={Content.heading3} Paragraph={Content.paragraph3}></Section> */}
+    <Frame SlideIn="_left" Content={Interactions1} label="Copied to clipboard notification"></Frame>
+    <Divider Big></Divider>
+    <Frame SlideIn="_right" Content={Interactions2} label="Empty inputs notification"></Frame>
+    <Divider Big></Divider>
+    <Frame SlideIn="_left" Content={Placeholders} label="Empty placeholders"></Frame>
+    <Section NoBottomDivider Title={Content.title3} Heading={Content.heading3} Paragraph={Content.paragraph3}></Section>
+    <Frame SlideIn="_up" Content={Landing_Page}></Frame>
     <Footer></Footer>
    </div>
     </div>
