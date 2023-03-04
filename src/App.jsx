@@ -43,8 +43,10 @@ function App() {
     <div className="App">
       <div className="Banner hidden_up"></div>
     <div className="Main_Container">
+      <div className="Flex_Container">
     <IntroSection Tags={Content.Tags} Logo={Logo} Paragraph={Content.IntroSection_Paragraph}></IntroSection>
     <Section NoBottomDivider Title={Content.title1} Heading={Content.heading1} Paragraph={Content.paragraph1}></Section>
+    </div>
     <Section NoBottomDivider Title={Content.title2} Heading={Content.heading2} Paragraph={Content.paragraph2}></Section>
     <Photo_Section Mock={Mockup_Teacher} Section_Heading={Content.PhotoSection_1_Section_Heading} Heading_1={Content.PhotoSection_1_Heading_1} Paragraph_1={Content.PhotoSection_1_Paragraph_1} Heading_2={Content.PhotoSection_1_Heading_2} Paragraph_2={Content.PhotoSection_1_Paragraph_2}></Photo_Section>
     <div className="Sliders_Container">
@@ -58,7 +60,7 @@ function App() {
     {/* <Section NoBottomDivider Title={Content.title3} Heading={Content.heading3} Paragraph={Content.paragraph3}></Section> */}
     <Frame SlideIn="_left" Content={Interactions1} label="Copied to clipboard notification"></Frame>
     <Divider Big></Divider>
-    <Frame SlideIn="_right" Content={Interactions2} label="Empty inputs notification"></Frame>
+    <Frame SlideIn="_right" Content={Interactions2} label="Empty input notification"></Frame>
     <Divider Big></Divider>
     <Frame SlideIn="_left" Content={Placeholders} label="Empty placeholders"></Frame>
     <Section NoBottomDivider Title={Content.title3} Heading={Content.heading3} Paragraph={Content.paragraph3}></Section>

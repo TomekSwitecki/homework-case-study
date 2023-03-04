@@ -1,7 +1,9 @@
 export const title1 = "Problem";
 export const heading1 = `Users found the application
 extremely unsatisfying and confusing to use.`;
-export const paragraph1 = `A complete lack of microinteractions and contextual help resulted in a very stressful and frustrating experience. Users didn’t feel confident taking actions due to the complete lack of interface feedback. They often felt that taking action resulted in no outcome at all.  
+export const paragraph1 = `A complete lack of microinteractions and contextual help resulted in a very stressful and frustrating experience. Users didn’t feel confident taking actions due to the complete lack of interface feedback. They often felt that taking action resulted in no outcome at all.
+
+Another thing that contributed to poor UX was application UI design that only emphasized the impression of using an app in its early alpha stage rather than a finished and mature service. 
 
 It made the whole application feel unreliable and faulty. From the business point of view, it resulted in a high user drop off rate.`;
 
