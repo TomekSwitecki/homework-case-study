@@ -1,4 +1,4 @@
-![reamtitle](https://user-images.githubusercontent.com/99132195/166160566-a94fc306-4929-481f-bde8-3bc750228eb7.png)
+![Case Study Github Banner](https://user-images.githubusercontent.com/99132195/222918462-62e13a7f-c113-42d7-993f-16a48d7c9402.png)
 
 ## 💻 Live Demo
 
