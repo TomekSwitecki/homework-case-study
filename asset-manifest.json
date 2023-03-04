@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/homework-case-study/static/css/main.fd2cc494.css",
+    "main.js": "/homework-case-study/static/js/main.cfac66a0.js",
+    "static/media/Registration_Old.png": "/homework-case-study/static/media/Registration_Old.731b3a0030b759df0833.png",
+    "static/media/LandingPage_Old.png": "/homework-case-study/static/media/LandingPage_Old.ad6daf1613fe9ff76f1d.png",
+    "static/media/Interactions_1.gif": "/homework-case-study/static/media/Interactions_1.c54d8452c401571ad271.gif",
+    "static/media/noise.png": "/homework-case-study/static/media/noise.5b12be7269cd89136067.png",
+    "static/media/Interactions_2.gif": "/homework-case-study/static/media/Interactions_2.13725cd7da24e2572986.gif",
+    "static/media/Mock_Student.png": "/homework-case-study/static/media/Mock_Student.868c39c493346b21ef1c.png",
+    "static/media/Mock_Teacher.png": "/homework-case-study/static/media/Mock_Teacher.bbe732b3262d78c6a071.png",
+    "static/media/Placeholders.svg": "/homework-case-study/static/media/Placeholders.fba6632461c35f5551a5b56d5a3d7520.svg",
+    "static/media/Banner_White.svg": "/homework-case-study/static/media/Banner_White.580e59f049581ef0e4e8.svg",
+    "static/media/Teacher_HomePage.png": "/homework-case-study/static/media/Teacher_HomePage.7a9eaa7120bb4bc00b83.png",
+    "static/media/Teacher_HomePage_Old.png": "/homework-case-study/static/media/Teacher_HomePage_Old.969f004f557ed51c9ba6.png",
+    "static/media/Student_HomePage.png": "/homework-case-study/static/media/Student_HomePage.4f4ca6d23650e785e2bf.png",
+    "static/media/Student_HomePage_Old.png": "/homework-case-study/static/media/Student_HomePage_Old.ea4d32f99665ffa45bdd.png",
+    "static/media/LandingPage.png": "/homework-case-study/static/media/LandingPage.9f4b7934860995e0f51f.png",
+    "static/media/Registration.png": "/homework-case-study/static/media/Registration.5d9952f22c41055ffbc9.png",
+    "static/media/Satoshi-Regular.woff2": "/homework-case-study/static/media/Satoshi-Regular.9ec05085c4cd2966eba8.woff2",
+    "static/media/Satoshi-Bold.woff2": "/homework-case-study/static/media/Satoshi-Bold.a0e6d25529eab537426c.woff2",
+    "static/media/logo_white.svg": "/homework-case-study/static/media/logo_white.02677d04887f2c0647345e3865763cd9.svg",
+    "static/media/grid.svg": "/homework-case-study/static/media/grid.c372587ae1228c8a420a.svg",
+    "index.html": "/homework-case-study/index.html",
+    "main.fd2cc494.css.map": "/homework-case-study/static/css/main.fd2cc494.css.map",
+    "main.cfac66a0.js.map": "/homework-case-study/static/js/main.cfac66a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd2cc494.css",
+    "static/js/main.cfac66a0.js"
+  ]
+}
