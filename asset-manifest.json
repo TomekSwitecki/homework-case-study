@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/homework-case-study/static/css/main.fd2cc494.css",
-    "main.js": "/homework-case-study/static/js/main.cfac66a0.js",
+    "main.css": "/homework-case-study/static/css/main.d724cf6d.css",
+    "main.js": "/homework-case-study/static/js/main.13db56e2.js",
     "static/media/Registration_Old.png": "/homework-case-study/static/media/Registration_Old.731b3a0030b759df0833.png",
     "static/media/LandingPage_Old.png": "/homework-case-study/static/media/LandingPage_Old.ad6daf1613fe9ff76f1d.png",
     "static/media/Interactions_1.gif": "/homework-case-study/static/media/Interactions_1.c54d8452c401571ad271.gif",
@@ -22,11 +22,11 @@
     "static/media/logo_white.svg": "/homework-case-study/static/media/logo_white.02677d04887f2c0647345e3865763cd9.svg",
     "static/media/grid.svg": "/homework-case-study/static/media/grid.c372587ae1228c8a420a.svg",
     "index.html": "/homework-case-study/index.html",
-    "main.fd2cc494.css.map": "/homework-case-study/static/css/main.fd2cc494.css.map",
-    "main.cfac66a0.js.map": "/homework-case-study/static/js/main.cfac66a0.js.map"
+    "main.d724cf6d.css.map": "/homework-case-study/static/css/main.d724cf6d.css.map",
+    "main.13db56e2.js.map": "/homework-case-study/static/js/main.13db56e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd2cc494.css",
-    "static/js/main.cfac66a0.js"
+    "static/css/main.d724cf6d.css",
+    "static/js/main.13db56e2.js"
   ]
 }
