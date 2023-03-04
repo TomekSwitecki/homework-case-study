@@ -1,11 +1,15 @@
 ![Case Study Github Banner](https://user-images.githubusercontent.com/99132195/222918658-27ff61fb-3a33-4ec3-890f-45316fb48f9f.png)
 
+## 📝 Case Study
 
-## 💻 Live Demo
+This is [Homework.com UI/UX Redesign Case Study](https://tomekswitecki.github.io/homework-case-study/) of Homework.com.
 
-[Try it out!](https://tomekswitecki.github.io/homework-case-study/)
+If you want to check out Homework.com project implementation repository you can do it [here.](https://github.com/TomekSwitecki/homework-project)
 
-## ✋ Show your support
+![Divider](https://user-images.githubusercontent.com/99132195/222921989-76a81b6e-443f-4443-8374-bd075fabb541.png)
+
+## ✋ Show your support 
 
 Give a ⭐️ if you like this project!
 
+![DividerPurple](https://user-images.githubusercontent.com/99132195/222922112-6360ab0e-e4ff-4947-9eeb-edaea246128e.png)
