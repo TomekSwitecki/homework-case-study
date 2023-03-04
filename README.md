@@ -1,4 +1,5 @@
-![Case Study Github Banner](https://user-images.githubusercontent.com/99132195/222918462-62e13a7f-c113-42d7-993f-16a48d7c9402.png)
+![Case Study Github Banner](https://user-images.githubusercontent.com/99132195/222918658-27ff61fb-3a33-4ec3-890f-45316fb48f9f.png)
+
 
 ## 💻 Live Demo
 
