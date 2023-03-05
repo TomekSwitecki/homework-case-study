@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/homework-case-study/static/css/main.d724cf6d.css",
-    "main.js": "/homework-case-study/static/js/main.13db56e2.js",
+    "main.css": "/homework-case-study/static/css/main.2b184a1c.css",
+    "main.js": "/homework-case-study/static/js/main.9b521b6d.js",
     "static/media/Registration_Old.png": "/homework-case-study/static/media/Registration_Old.731b3a0030b759df0833.png",
+    "static/media/Figma.png": "/homework-case-study/static/media/Figma.54757ac43c002140459c.png",
     "static/media/LandingPage_Old.png": "/homework-case-study/static/media/LandingPage_Old.ad6daf1613fe9ff76f1d.png",
     "static/media/Interactions_1.gif": "/homework-case-study/static/media/Interactions_1.c54d8452c401571ad271.gif",
     "static/media/noise.png": "/homework-case-study/static/media/noise.5b12be7269cd89136067.png",
     "static/media/Interactions_2.gif": "/homework-case-study/static/media/Interactions_2.13725cd7da24e2572986.gif",
+    "static/media/LandingPage_Helper.png": "/homework-case-study/static/media/LandingPage_Helper.0565ed62c5066641900e.png",
     "static/media/Mock_Student.png": "/homework-case-study/static/media/Mock_Student.868c39c493346b21ef1c.png",
     "static/media/Mock_Teacher.png": "/homework-case-study/static/media/Mock_Teacher.bbe732b3262d78c6a071.png",
     "static/media/Placeholders.svg": "/homework-case-study/static/media/Placeholders.fba6632461c35f5551a5b56d5a3d7520.svg",
@@ -22,11 +24,11 @@
     "static/media/logo_white.svg": "/homework-case-study/static/media/logo_white.02677d04887f2c0647345e3865763cd9.svg",
     "static/media/grid.svg": "/homework-case-study/static/media/grid.c372587ae1228c8a420a.svg",
     "index.html": "/homework-case-study/index.html",
-    "main.d724cf6d.css.map": "/homework-case-study/static/css/main.d724cf6d.css.map",
-    "main.13db56e2.js.map": "/homework-case-study/static/js/main.13db56e2.js.map"
+    "main.2b184a1c.css.map": "/homework-case-study/static/css/main.2b184a1c.css.map",
+    "main.9b521b6d.js.map": "/homework-case-study/static/js/main.9b521b6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.d724cf6d.css",
-    "static/js/main.13db56e2.js"
+    "static/css/main.2b184a1c.css",
+    "static/js/main.9b521b6d.js"
   ]
 }
