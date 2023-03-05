@@ -396,21 +396,70 @@
   background-color: #F8F8F8;
   border: 20px solid #F8F8F8;
 }
+.Frame_Container .object-fit-none {
+  -o-object-fit: none;
+     object-fit: none;
+}
+.Frame_Container .object-fit-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .Frame_Container img {
   width: 100%;
   height: auto;
+  -o-object-fit: unset;
+     object-fit: unset;
 }
-.Frame_Container .Frame_label {
+
+.Frame_Container__label {
+  position: relative;
+  margin: auto;
+  width: 1120px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #F8F8F8;
+  border: 20px solid #F8F8F8;
+  margin: 86px auto;
+}
+.Frame_Container__label .object-fit-none {
+  -o-object-fit: none;
+     object-fit: none;
+}
+.Frame_Container__label .object-fit-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Frame_Container__label img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: unset;
+     object-fit: unset;
+}
+.Frame_Container__label .Frame_label {
   position: absolute;
   z-index: 1;
   top: -70.5px;
   left: -20px;
+  padding: 12px 32px;
   font-size: 20px;
   font-weight: bold;
   font-family: "Satoshi";
   background: #f8f8f8;
-  padding: 12px 32px;
   box-shadow: 13px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.Frame_Container__label.link .Frame_label {
+  background: linear-gradient(99.12deg, #1A96FD 0%, #007EE7 98.67%);
+  box-shadow: 0px 46px 128px rgba(26, 150, 253, 0.07), 0px 23.0225px 64.0625px rgba(26, 150, 253, 0.0532233), 0px 13.8677px 38.5883px rgba(26, 150, 253, 0.0456112), 0px 8.88712px 24.7294px rgba(26, 150, 253, 0.0399626), 0px 5.75991px 16.0276px rgba(26, 150, 253, 0.035), 0px 3.6258px 10.0892px rgba(26, 150, 253, 0.0300374), 0px 2.08325px 5.79686px rgba(26, 150, 253, 0.0243888), 0px 0.916891px 2.55135px rgba(26, 150, 253, 0.0167767);
+  color: rgb(255, 255, 255);
+}
+.Frame_Container__label.link {
+  transition: all 0.2s;
+}
+.Frame_Container__label.link:hover {
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 4px solid #007EE7;
+  outline: 16px solid #1A96FD;
 }
 
 .Footer_Container {
@@ -587,7 +636,7 @@ em:hover {
 
 .hidden_up {
   opacity: 0;
-  transform: translateY(-100px);
+  transform: translateY(-50px);
   filter: blur(5px);
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s ease-in-out, filter 0.15s ease;
 }

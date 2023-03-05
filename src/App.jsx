@@ -30,6 +30,9 @@ import Mockup_Student from "./Ilustrations/Mock_Student.png";
 import Interactions1 from "./Ilustrations/Interactions_1.gif";
 import Interactions2 from "./Ilustrations/Interactions_2.gif";
 import Placeholders from "./Ilustrations/Placeholders.svg";
+
+import Landing_Page_Helper from "./Ilustrations/LandingPage_Helper.png";
+import Figma from "./Ilustrations/Figma.png";
 import Divider from './Components/Divider';
 
 
@@ -64,7 +67,8 @@ function App() {
     <Divider Big></Divider>
     <Frame SlideIn="_left" Content={Placeholders} label="Empty placeholders"></Frame>
     <Section NoBottomDivider Title={Content.title3} Heading={Content.heading3} Paragraph={Content.paragraph3}></Section>
-    <Frame SlideIn="_up" Content={Landing_Page}></Frame>
+    <Frame pageUrl={"https://www.figma.com/file/nK12ANwHtHpSDCMmuLyMpg/Homework.com?node-id=0%3A1&t=AVZE39mnvUZ70kao-1"} label={"Check my full Figma work file here"} SlideIn="_up" Content={Figma} objectFit="none"></Frame>
+    <Frame pageUrl={"https://tomekswitecki.github.io/homework-project/#/landing"} label={"Try application here"} SlideIn="_up" Content={Landing_Page_Helper} ></Frame>
     <Footer></Footer>
    </div>
     </div>
