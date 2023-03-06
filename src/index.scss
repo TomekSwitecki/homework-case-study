@@ -142,7 +142,7 @@ em:hover
 
   .hidden_up {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-55px);
     filter: blur(5px);
     @include transition();
   }
