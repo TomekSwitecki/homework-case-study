@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/homework-case-study/static/css/main.134065b7.css",
+    "main.css": "/homework-case-study/static/css/main.7a02e19f.css",
     "main.js": "/homework-case-study/static/js/main.9b521b6d.js",
     "static/media/Registration_Old.png": "/homework-case-study/static/media/Registration_Old.731b3a0030b759df0833.png",
     "static/media/Figma.png": "/homework-case-study/static/media/Figma.54757ac43c002140459c.png",
@@ -24,11 +24,11 @@
     "static/media/logo_white.svg": "/homework-case-study/static/media/logo_white.02677d04887f2c0647345e3865763cd9.svg",
     "static/media/grid.svg": "/homework-case-study/static/media/grid.c372587ae1228c8a420a.svg",
     "index.html": "/homework-case-study/index.html",
-    "main.134065b7.css.map": "/homework-case-study/static/css/main.134065b7.css.map",
+    "main.7a02e19f.css.map": "/homework-case-study/static/css/main.7a02e19f.css.map",
     "main.9b521b6d.js.map": "/homework-case-study/static/js/main.9b521b6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.134065b7.css",
+    "static/css/main.7a02e19f.css",
     "static/js/main.9b521b6d.js"
   ]
 }
