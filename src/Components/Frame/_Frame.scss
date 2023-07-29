@@ -1,20 +1,18 @@
 @import "../Showcase";
 
-@mixin frame-container{
+@mixin frame-container {
   position: relative;
   margin: auto;
-  width: 1120px;
+
   height: fit-content;
   background-color: #F8F8F8;
   border: 20px solid #F8F8F8;
 
-  .object-fit-none
-  {
+  .object-fit-none {
     object-fit: none;
   }
 
-  .object-fit-contain
-  {
+  .object-fit-contain {
     object-fit: contain;
   }
 
@@ -23,7 +21,9 @@
     height: auto;
     object-fit: unset;
   }
-};
+}
+
+;
 
 .Frame_Container {
   @include frame-container;

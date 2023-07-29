@@ -14,6 +14,7 @@
     src: url("./fonts/Satoshi-Regular.woff2");
     font-weight: 400;
 }
+
 @font-face {
     font-family: "Satoshi";
     src: url("./fonts/Satoshi-Bold.woff2");
@@ -64,8 +65,7 @@ ol {
     list-style: none;
 }
 
-em
-{
+em {
     background: linear-gradient(93.64deg, #1A96FD 0%, #007EE7 100%);
     color: white;
     text-transform: none;
@@ -76,14 +76,12 @@ em
     transition: all 0.2s;
 }
 
-em:hover
-{
+em:hover {
     letter-spacing: -0.05px;
     transition: all 0.2s;
 }
 
-.Flex_Container
-{
+.Flex_Container {
     display: flex;
     flex-direction: column;
 }
@@ -101,26 +99,26 @@ em:hover
     margin: auto;
     max-width: 1120px;
     width: 1120px;
+    box-sizing: border-box;
 }
 
 .Banner {
     background-image: url("./Ilustrations/Banner_White.svg");
-    /* width: 1440px; */
+
     max-height: 400px;
     height: 400px;
     background-size: cover;
     margin: auto;
 }
-.Sliders_Container
-{
+
+.Sliders_Container {
     display: flex;
     flex-direction: column;
     gap: 128px;
 }
 
-@mixin transition
-{
-    transition:  transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1),opacity 0.3s ease-in-out, filter 0.15s ease;
+@mixin transition {
+    transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s ease-in-out, filter 0.15s ease;
 }
 
 
@@ -131,92 +129,116 @@ em:hover
     transform: translateX(-100px);
     filter: blur(5px);
     @include transition();
-  }
+}
 
-  .hidden_opacity
-  {
+.hidden_opacity {
     opacity: 0;
     filter: blur(5px), saturate(0%);
     @include transition();
-  }
+}
 
-  .hidden_up {
+.hidden_up {
     opacity: 0;
     transform: translateY(-55px);
     filter: blur(5px);
     @include transition();
-  }
-  .hidden_down {
+}
+
+.hidden_down {
     opacity: 0;
     transform: translateY(100px);
     filter: blur(5px);
     @include transition();
-  }
-  .hidden_right {
+}
+
+.hidden_right {
     opacity: 0;
     transform: translateX(100px);
     filter: blur(5px);
     @include transition();
-  }
-  .show {
+}
+
+.show {
     opacity: 1;
-    transform: translate(0,0);
+    transform: translate(0, 0);
     filter: blur(0);
     @include transition();
-  }
+}
 
 
-  @media screen and (max-width: 1100px) {
-    .PhotoSection_Container,.PhotoSection_list_item
-    {
-        width: 70%;
+@media screen and (max-width: 1150px) {
+
+    .Sliders_Container {
+        display: none;
     }
-    .RevealingSlider_Container
-    {
+
+    .RevealingSlider_Container {
         width: 100%;
     }
-            .Logo
-            {
-                width: 60%;
-                min-width: 170px;
-            }
-        .Main_Container
-        {
-            width: 70%;
-        }
 
-        .IntroSection_Container,.Footer_Container
-        {
-            padding: 32px 32px;
-        }
-        .PhotoSection_Container__Reversed,.PhotoSection_Container
-        {
-            flex-direction: column;
-            margin: 0 0 128px 0;
-        }
-
-        .Frame_Container
-        {
-            min-width: 200px;
-            width: 100%;
-            .Frame_label
-            {
-                top: -54.5px;
-                padding: 4px 8px;
-            }
-        }
-
-  }
-
-
-  @media screen and (max-width: 460px) {
-    .PhotoSection_Container,.PhotoSection_list_item
-    {
-        width: 40%;
-
+    .Logo {
+        width: 70%;
+        min-width: 170px;
     }
-    .Frame_label
-    {
+
+    .Main_Container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 48px;
+    }
+
+    .IntroSection_Container,
+    .Footer_Container {
+        padding: 32px 32px;
+    }
+
+    .PhotoSection_img_container {
+        position: relative;
+        left: -350px;
+    }
+
+    .PhotoSection_Container__Reversed,
+    .PhotoSection_Container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 0 128px 0;
+    }
+
+    .PhotoSection_text_container {
+        margin: auto;
+        width: 100%;
+        padding-bottom: 48px;
+    }
+
+    .Frame_Container {
+        min-width: 200px;
+        width: 100%;
+
+        .Frame_label {
+            top: -54.5px;
+            padding: 4px 8px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 460px) {
+
+    .Main_Container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 32px;
+    }
+
+    .Listed_Paragraph {
+        padding-left: 25px;
+    }
+
+    .PhotoSection_Container,
+    .PhotoSection_list_item {}
+
+    .Frame_label {
         visibility: hidden;
     }
-  }
+}

@@ -1,8 +1,10 @@
 @import '../Text';
+
 .PhotoSection_list_item {
     .Section_Heading {
         position: relative;
         @include section_heading(24px);
+
         &.Section_Heading:before {
             left: -36px;
             top: -6px;
@@ -25,15 +27,15 @@
     height: max-content;
     margin: 0 auto 128px auto;
 
-  }
-  
+}
+
 
 .PhotoSection_Container {
 
     @include PhotoSection_Container;
     flex-direction: row;
-    .Section_Heading
-    {
+
+    .Section_Heading {
         white-space: nowrap;
     }
 }
@@ -49,7 +51,7 @@
     position: relative;
     width: 75%;
     max-width: 560px;
-    min-width: 400px;
+
     background-image: url("../src/Ilustrations/grid.svg");
 }
 

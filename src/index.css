@@ -48,7 +48,6 @@
   position: relative;
   width: 75%;
   max-width: 560px;
-  min-width: 400px;
   background-image: url("../src/Ilustrations/grid.svg");
 }
 
@@ -390,7 +389,6 @@
 .Frame_Container {
   position: relative;
   margin: auto;
-  width: 1120px;
   height: -moz-fit-content;
   height: fit-content;
   background-color: #F8F8F8;
@@ -414,7 +412,6 @@
 .Frame_Container__label {
   position: relative;
   margin: auto;
-  width: 1120px;
   height: -moz-fit-content;
   height: fit-content;
   background-color: #F8F8F8;
@@ -604,11 +601,11 @@ em:hover {
   margin: auto;
   max-width: 1120px;
   width: 1120px;
+  box-sizing: border-box;
 }
 
 .Banner {
   background-image: url("./Ilustrations/Banner_White.svg");
-  /* width: 1440px; */
   max-height: 400px;
   height: 400px;
   background-size: cover;
@@ -636,7 +633,7 @@ em:hover {
 
 .hidden_up {
   opacity: 0;
-  transform: translateY(-50px);
+  transform: translateY(-55px);
   filter: blur(5px);
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s ease-in-out, filter 0.15s ease;
 }
@@ -662,26 +659,40 @@ em:hover {
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s ease-in-out, filter 0.15s ease;
 }
 
-@media screen and (max-width: 1100px) {
-  .PhotoSection_Container, .PhotoSection_list_item {
-    width: 70%;
+@media screen and (max-width: 1150px) {
+  .Sliders_Container {
+    display: none;
   }
   .RevealingSlider_Container {
     width: 100%;
   }
   .Logo {
-    width: 60%;
+    width: 70%;
     min-width: 170px;
   }
   .Main_Container {
-    width: 70%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 48px;
   }
-  .IntroSection_Container, .Footer_Container {
+  .IntroSection_Container,
+  .Footer_Container {
     padding: 32px 32px;
   }
-  .PhotoSection_Container__Reversed, .PhotoSection_Container {
+  .PhotoSection_img_container {
+    position: relative;
+    left: -350px;
+  }
+  .PhotoSection_Container__Reversed,
+  .PhotoSection_Container {
+    width: 100%;
     flex-direction: column;
     margin: 0 0 128px 0;
+  }
+  .PhotoSection_text_container {
+    margin: auto;
+    width: 100%;
+    padding-bottom: 48px;
   }
   .Frame_Container {
     min-width: 200px;
@@ -693,8 +704,13 @@ em:hover {
   }
 }
 @media screen and (max-width: 460px) {
-  .PhotoSection_Container, .PhotoSection_list_item {
-    width: 40%;
+  .Main_Container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .Listed_Paragraph {
+    padding-left: 25px;
   }
   .Frame_label {
     visibility: hidden;
